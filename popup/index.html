@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+
+
+<button type="button" class="btn-primary">
+        عضویت در خبرنامه
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.07 5.93018L4 12.0002L10.07 18.0702" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.4" d="M21 12H4.16998" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+</button>
+
+<div class="container">
+    <div class="box">
+        <button type="button" class="close-btn">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.7572 7.75732L16.2425 16.2426" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.75715 16.2426L16.2424 7.75732" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+        </button>
+        <img src="images/vector.png" class="box__img" alt="">
+        <p>شماره شما ثبت شد</p>
+        <p>وبا موفقیت عضو خبرنامه شدید:)</p>
+    </div>
+</div>
+
+
+
+<div class="overlay">
+  
+
+</div>
+
+
+
+
+
+<script>
+
+
+    let btn = document.querySelector(".btn-primary");
+    let closeBtn = document.querySelector(".close-btn");
+    let overlay = document.querySelector(".overlay");
+
+
+
+
+    btn.addEventListener("click", function(){
+        document.querySelector(".overlay").classList.add("overlay--show")
+        document.querySelector(".container").classList.add("container--show")
+
+    })
+    
+    closeBtn.addEventListener("click", function(){
+        document.querySelector(".overlay").classList.remove("overlay--show")
+        document.querySelector(".container").classList.remove("container--show")
+    })
+
+    overlay.addEventListener("click", function(){
+        document.querySelector(".overlay").classList.remove("overlay--show")
+        document.querySelector(".container").classList.remove("container--show")
+        
+        
+    })
+
+
+</script>
+</body>
+
+</html>

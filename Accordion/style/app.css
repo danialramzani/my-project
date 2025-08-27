@@ -1,0 +1,294 @@
+/* Fonts */
+
+@font-face {
+    font-family: "YekanBakh Regular";
+    src: url("../fonts/YekanBakh-Regular.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Medium";
+    src: url("../fonts/YekanBakh-Medium.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Bold";
+    src: url("../fonts/YekanBakh-Bold.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Heavy";
+    src: url("../fonts/YekanBakh-Heavy.woff");
+}
+
+/* Reset Css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    font: inherit;
+    border: 0;
+
+}
+
+/* App.css */
+
+body{
+    font-family: "YekanBakh Regular";
+    line-height: 1.5;
+}
+
+.container{
+    width: 800px;
+    margin: 100px auto 0 auto;
+
+}
+
+
+.accordion{
+    position: relative;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid transparent;
+    margin: 50px;
+}
+
+
+.accordio--open{
+    border-color: rgba(229, 229, 229, 0.7);
+}
+
+.accordion__header{
+    cursor: pointer;
+    user-select: none;
+    padding: 18px;
+}
+
+.accordio--open .accordion__header{
+    padding-bottom: 16px;
+}
+
+
+.accordion--open .accordion__title{
+    color: #05A6A6;
+}
+
+.accordion__title{
+    color: #1D2939;
+    font-family: "YekanBakh Medium";
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.accordion__body{
+    display: none;
+    padding: 0 18px 36px 18px;
+}
+
+.accordion--open .accordion__body{
+    display: block;
+}
+
+.accordion__text{
+    color: #1D2939;
+    font-size: 14px;
+}
+
+
+.accordion__icon{
+    position: absolute;
+    left: 18px;
+    bottom: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid #05A6A6;
+    background-color: #fff;
+}
+
+
+.accordion__icon{
+    cursor: pointer;
+}
+
+
+.accordion--open .accordion__icon{
+    background-color: #05A6A6;
+}
+
+
+
+.accordion__icon-minus{
+    display: none;
+}
+
+
+.accordion--open .accordion__icon-add{
+    display: none;
+}
+
+.accordion--open .accordion__icon-minus{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+        /* DEMO */
+
+
+/* .demo{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #1D2939;
+    width: 1440px;
+    height: 84px;
+    top: -1018px;
+    left: -9257px;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+} */
