@@ -194,7 +194,7 @@ body{
     position: fixed;
     inset: 0;
     background-color: #fff;
-    transition: all 250ms ease-in;
+    transition: all 120ms    ease-in;
 }
 
 .filter--show{
