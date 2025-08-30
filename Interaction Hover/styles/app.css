@@ -1,0 +1,244 @@
+/* Fonts */
+
+@font-face {
+    font-family: "YekanBakh Light";
+    src: url("../fonts/YekanBakh-Light.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Regular";
+    src: url("../fonts/YekanBakh-Regular.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Medium";
+    src: url("../fonts/YekanBakh-Medium.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Bold";
+    src: url("../fonts/YekanBakh-Bold.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh Heavy";
+    src: url("../fonts/YekanBakh-Heavy.woff");
+}
+
+/* Reset Css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,input {
+    font: inherit;
+    border: 0;
+
+}
+
+/* App Css */
+
+body {
+    font-family: "YekanBakh Bold";
+    line-height: 1.5;
+    font-size: 18px;
+    background: linear-gradient(259deg, rgba(255, 157, 0, 0.80) 0%, rgba(255, 104, 34, 0.80) 100%);
+}
+
+.container{
+    width: 1008px;
+    margin: 100px auto;
+    display: flex;
+    column-gap: 84px;
+}
+
+.drink{
+    width: 280px;
+    background-color: #f6f6f6;
+    border-radius: 300px;
+    padding: 32px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.drink:hover .drink__image{
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.drink:hover .drink__back-img{
+    filter: blur(2px);
+}
+
+
+.drink__image{
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+    transition: all 1000ms cubic-bezier(1, 0, 0, 1) ;
+    transition-delay: 100ms;
+}
+
+.drink__back-img{
+    position: absolute;
+    transition: all 1000ms cubic-bezier(1, 0, 0, 1) ;
+    transition-delay: 100ms;
+}
+
+.drink__back-img--right{
+    top: 64px;
+    right: 20px;
+}
+
+.drink__back-img--left{
+    bottom: 104px;
+    left: 20px;
+}
+
+.drink__text-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+.drink__taste{
+    font-family: "YekanBakh Light";
+}
+
