@@ -194,6 +194,38 @@ body {
     cursor: pointer;
 }
 
+
+.drink:hover .drink__comment{
+    transform:  scale(1) translateX(100px);
+}
+
+.drink__comment{
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(229, 229, 229, 0.5);
+    border-radius: 50px 12px ;
+    width: 180px;
+    text-align: center;
+    padding: 15px 16px;
+    box-shadow: 0px 24px 50px -10px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+    transition: all 1000ms cubic-bezier(1, 0, 0, 1) 100ms;
+    transform: scale(0) translateX(0);
+}
+
+.drink__comment h6{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.drink__comment p{
+    font-size: 14px;
+    font-family: "YekanBakh Light";
+}
+
+
 .drink:hover .drink__image{
     transform: scale(1.2) rotate(-10deg);
 }
@@ -203,13 +235,19 @@ body {
 }
 
 
+.drink:hover .drink__back-img--right{
+    transform: rotate(10deg);
+}
+
+.drink:hover .drink__back-img--left{
+    transform: rotate(-10deg);
+}
 .drink__image{
     display: block;
     margin: 0 auto;
     z-index: 10;
     position: relative;
-    transition: all 1000ms cubic-bezier(1, 0, 0, 1) ;
-    transition-delay: 100ms;
+    transition: all 1000ms cubic-bezier(1, 0, 0, 1) 100ms;
 }
 
 .drink__back-img{
