@@ -1,21 +1,27 @@
 /* App Fonts */
 
 @font-face {
-    font-family: "TTNorms";
-    src: url("../fonts/TTNorms-Regular.otf") format("openType");
-}
-@font-face {
-    font-family: "TTNorms Medium";
-    src: url("../fonts/TTNorms-Medium.otf") format("openType");
-}
-@font-face {
-    font-family: "TTNorms Light";
-    src: url("../fonts/TTNorms-Light.otf") format("openType");
+    font-family: "YekanBakh";
+    font-weight: 400;
+    src: url("../fonts/YekanBakh-Regular.woff");
 }
 
 @font-face {
-    font-family: "Times Roman Italic";
-    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+    font-family: "YekanBakh";
+    font-weight: 600;
+    src: url("../fonts/YekanBakh-Medium.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    font-weight: 800;
+    src: url("../fonts/YekanBakh-Bold.woff");
+}
+
+@font-face {
+    font-family: "YekanBakh";
+    font-weight: 900;
+    src: url("../fonts/YekanBakh-Heavy.woff");
 }
 
 /* Normalize Css */
@@ -27,6 +33,8 @@ html {
 
 body {
     margin: 0;
+    font-family: "YekanBakh";
+    font-weight: 400;
 }
 
 main {
@@ -212,9 +220,8 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: "TTNorms";
-}
+
+
 
 .container {
     max-width: 80rem;
@@ -224,36 +231,37 @@ body {
     padding-left: 1rem;
 }
 
-.header {
-}
 .header-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
+    
 }
 .nav {
     display: flex;
     align-items: center;
+    
 }
 .nav-logo {
     margin-right: 2rem;
 }
-.nav-logo__img {
-}
+
+
 .menu {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
     display: flex;
 }
-.menu__item {
-}
+
+
 .menu__link {
     text-decoration: none;
     color: #081D43;
     padding: 0 1rem;
-    
+    font-family: "YekanBakh";
+    font-weight: 600;
 }
 .header__link{
     background-color: #0050C8;
@@ -261,12 +269,14 @@ body {
     color: #fff;
     border-radius: 0.5rem;
     text-decoration: none;
+     font-family: "YekanBakh";
+     font-weight: 600;
 }
 
 /* Header Bottom */
 
 .header-bottom{
-    margin-top: 6rem;
+    margin-top: 5.5rem;
 }
 .header-content{
     display: flex;
@@ -283,8 +293,8 @@ body {
 }
 .header-content__title{
     color: #081D43;
-    font-family: 'TTNorms Medium';
-    font-weight: normal;
+    font-family: "YekanBakh";
+    font-weight: 900;
     line-height: 2.5rem;
 }
 .header-content__text{
@@ -296,7 +306,7 @@ body {
     margin-top: 1.5rem;
 }
 .header-content__link{
-    background-color: #0050C8;
+    background-color: #87BC25;
     padding: 0.8rem 1.5em;
     color: #fff;
     border-radius: 0.5rem;
@@ -307,7 +317,7 @@ body {
     text-align: center;
 }
 .header-content__link:nth-child(1){
-    background-color: #87BC25;
+    background-color: #0050C8;
 }
 .header-content__right{
 
@@ -315,6 +325,108 @@ body {
 .header-content__img{
     width: 100%;
 }
+
+/* start Main */
+
+.main{
+    padding: 6rem 0;
+}
+.works{
+    text-align: center;
+}
+.works__text{
+    color: #6c7890;
+    font-family: "YekanBakh";
+    margin-bottom: 0;
+    font-weight: 900;
+    padding-top: 30px;
+}
+.works__title{
+    color: #081D43;
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+.works-content{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.works-content__title{
+    color: #081D43;
+}
+.works-content__text{
+    color: #6c7890;
+    line-height: 2rem;
+    max-width: 16rem;
+}
+
+
+.works-img{
+    max-width: 31rem;
+    margin: 0 auto;
+}
+
+.works-img__img{
+    width: 100%;
+}
+
+
+/* person-comments */
+
+.person-comments{
+    background-color: #2f5bea;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.person-comments__title{
+    font-family: "YekanBakh";
+    font-weight: 600;
+}
+.person-comments__text{
+    font-family: "YekanBakh";
+    font-weight: 300;
+}
+.comments{
+    margin: 3.5rem 0;
+    display: flex;
+}
+.comment{
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: 0.5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+}
+.comment__content{
+    text-align: left;
+    padding: 1.2rem;
+}
+.comment__body{
+    font-family: "YekanBakh";
+    color: #7e8085;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.comment__info{
+    display: flex;
+    border-top: 1px solid #e8e8ef;
+    padding: 0.8rem 1.2rem;
+    align-items: center;
+}
+.comment__img{
+
+}
+.comment__person{
+    color: #000000;
+    margin: 0 0 0 0.5rem;
+    
+}
+
 
 
 /* Project Responsive */
