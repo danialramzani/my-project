@@ -411,6 +411,7 @@ html {
     color: #7e8085;
     line-height: 1.5rem;
     margin: 0;
+    text-align: justify; 
 }
 .comment__info{
     display: flex;
