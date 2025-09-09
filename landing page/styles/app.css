@@ -263,6 +263,9 @@ html {
     font-family: "YekanBakh";
     font-weight: 600;
 }
+
+
+
 .header__link{
     background-color: #0050C8;
     padding: 0.8rem 1.5em;
@@ -271,6 +274,13 @@ html {
     text-decoration: none;
      font-family: "YekanBakh";
      font-weight: 600;
+}
+
+
+.header__icon{
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
 }
 
 /* Header Bottom */
@@ -356,7 +366,14 @@ html {
     margin-top: 3rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.works-content__item{
+    flex-basis: 16rem;
+    flex-shrink: 0;
+}
+
 .works-content__title{
     color: #081D43;
 }
@@ -556,16 +573,85 @@ html {
     .container {
         max-width: 720px;
     }
+
+    .header__link{
+        display: none;
+    }
+
+    .header-content{
+        flex-direction: column-reverse;
+    }
+
+    .header-bottom{
+        margin-top: 3rem;
+    }
+
+    .header-content__wrapper{
+        width: 100%;
+    }
+    .header-content__right{
+        margin-bottom: 2rem;
+    }
+
+    .header-content__links{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .header-content__link{
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    .header__icon{
+        display: block;
+    }
+    .menu{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        right: -256px;
+        bottom: 0;
+        background-color: #3f70e1;
+        width: 16rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: 0.3s all;
+    }
+
+    .menu__item{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .menu__link{
+        color: white;
+    }
+
+    .works-content__item{
+        flex-basis: 14rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+
+    .works-content__item{
+        flex-basis: 100%;
+    }
+
+    .works-content__item{
+        margin-bottom: 1.5rem;
+    }
+
+    .works-content__text{
+        max-width: 100%;
+
     }
 }
