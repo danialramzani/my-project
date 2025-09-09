@@ -267,7 +267,7 @@ html {
     background-color: #0050C8;
     padding: 0.8rem 1.5em;
     color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     text-decoration: none;
      font-family: "YekanBakh";
      font-weight: 600;
@@ -303,13 +303,13 @@ html {
 }
 .header-content__links{
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 .header-content__link{
     background-color: #87BC25;
     padding: 0.8rem 1.5em;
     color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     text-decoration: none;
     margin-right: 0.8rem;
     display: block;
@@ -329,10 +329,11 @@ html {
 /* start Main */
 
 .main{
-    padding: 6rem 0;
+    padding-top: 3rem 0;
 }
 .works{
     text-align: center;
+    padding: 5rem 0;
 }
 .works__text, .portfolio__text{
     color: #6c7890;
@@ -341,11 +342,14 @@ html {
     font-weight: 900;
     padding-top: 30px;
     text-transform: uppercase;
+    margin-top: 0;
+    
 }
 .works__title, .portfolio__title{
     color: #081D43;
     margin-top: 0.8rem;
     font-weight: 700;
+    font-size: 1.8rem;
 }
 .works-content{
     margin-bottom: 3rem;
@@ -379,12 +383,14 @@ html {
     background-color: #2f5bea;
     color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 
 .person-comments__title{
     font-family: "YekanBakh";
     font-weight: 600;
+    margin-top: 0;
+    font-size: 1.8rem;
 }
 .person-comments__text{
     font-family: "YekanBakh";
@@ -403,7 +409,7 @@ html {
 .comment{
     background-color: #fff;
     margin: 1rem;
-    border-radius: 0.5rem ;
+    border-radius: 0.3rem ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -451,13 +457,13 @@ html {
 
 .portfolio{
     text-align: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .portfolio__text{
 
 }
 .portfolio__title{
-
+   
 }
 .portfolio-items{
     display: flex;
@@ -468,11 +474,13 @@ html {
 .portfolio__item{
     flex-basis: 23rem;
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     overflow: hidden;
 }
 .portfolio__img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -480,7 +488,7 @@ html {
 
 .newsletter{
     background-color: #2c57e4;
-    padding: 4.5rem 0;
+    padding: 6.5rem 0;
     color: #fff;
 }
 
@@ -494,11 +502,11 @@ html {
 }
 .newsletter__email{
     background-color: #fff;
-    flex-basis: 20rem;
+    flex-basis: 22rem;
     display: flex;
     justify-content: space-between;
-    padding: 0.4rem 0.4rem 0.4rem 1.5rem;
-    border-radius: 0.5rem;
+    padding:0.3rem ;
+    border-radius: 0.3rem;
 }
 .newsletter__txt{
     border: none;
@@ -512,7 +520,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     transform: rotate(180deg    );
 }
 
