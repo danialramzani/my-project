@@ -632,6 +632,15 @@ html {
         color: white;
     }
 
+    .megamenu{
+        width: 500px;
+        height: 500px;
+        opacity: 0; 
+        visibility: hidden;
+        transition: all 150ms ease-in;
+        background-color: aqua;
+    }
+
     .works-content__item{
         flex-basis: 14rem;
     }
