@@ -295,12 +295,12 @@ a {
 
 .submenu{
     position: relative;
-    background-color: #f4f4f5;
+    background-color: #fff;
     width: 442px;
     height: 215px;
     margin-top: 28px;
-    border: 1px solid #87BC25;
-    border-top: 1px solid #87BC25;
+    border: 2px solid #87BC25;
+    border-top: 2px solid #87BC25;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     overflow: hidden;
@@ -312,7 +312,7 @@ a {
     justify-content: space-between;
     padding: 12px 20px;
     width: 221px;
-    background-color: #f4f4f5;
+    background-color: #fff;
 }
 
 .submenu__item-wrapper:hover .submenu__item{
@@ -334,7 +334,7 @@ a {
     row-gap: 16px; 
     width: 221px;
     padding: 20px;
-    background-color: #f4f4f5;
+    background-color: #fff;
     
 }
 .submenu__item-wrapper:hover  .submenu__item-body{
