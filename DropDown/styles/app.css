@@ -16,10 +16,12 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: rgb(190, 132, 92);
 }
 
 .dropdown{
     position: relative;
+    
 }
 
 .dropdown__btn{
