@@ -165,6 +165,7 @@ body {
     justify-content: center;
     gap: 40px;
     height: 100vh;
+    background-color: rgba(233, 144, 72, 0.541);
 }
 
 .btn {
